@@ -62,7 +62,7 @@ export default function Card({ ticket, userName, grouping, userAvailability }) {
         )}
         {ticket.tag.map((tag, index) => (
           <span key={index} className="tag">
-            <img src={getStatusIcon(ticket.status)} alt="Tag" className="tag-icon" />
+            <img src="/images/grey-dot.svg" alt="Tag" className="tag-icon" />
             {tag}
           </span>
         ))}
