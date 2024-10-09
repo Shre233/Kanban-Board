@@ -5,7 +5,7 @@ import './Column.css';
 export default function Column({ title, tickets, users, grouping }) {
   const getUserInfo = (userId) => {
     const user = users.find(u => u.id === userId);
-    return user ? { name: user.name, available: user.available } : { name: 'Unassigned', available: false };
+    return user ? { name: user.name, available: user.available } : { name: '', available: false };
   };
 
   const getIcon = () => {

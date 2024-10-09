@@ -31,7 +31,7 @@ const groupByUser = (tickets, users) => {
   }, {});
 
   const groupedTickets = tickets.reduce((acc, ticket) => {
-    const userName = userMap[ticket.userId] || users[0].name; // Assign to first user if no match
+    const userName = userMap[ticket.userId] || users[0].name; 
     (acc[userName] = acc[userName] || []).push(ticket);
     return acc;
   }, {});
